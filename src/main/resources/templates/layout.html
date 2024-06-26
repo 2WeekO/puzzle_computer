@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+
+    <link rel="stylesheet" href="/src/main/java/com/example/puzzle_computer/question/resourcesexample/puzzle_computer/question/resources/static/style.css">
+    <link rel="icon" type="image/png" href="/image/puzzlecom_logo.png">
+    <title>퍼즐컴 - 커스텀 조립 컴퓨터 전문 쇼핑몰</title>
+
+</head>
+
+
+<body class="body">
+    <div th:replace="~{topnavbar :: topnavbarFragment}"></div>
+    <!-- Top Navigation Start -->
+    <div th:replace="~{navbar :: navbarFragment}"></div>
+    <!-- Top Navigation End -->
+
+    <!-- 내용 Start -->
+    <div layout:fragment="content" class="content"></div>
+    <!-- 내용 End -->
+
+    <!-- Bootstrap JS -->
+    <script th:src="@{/bootstrap.min.js}"></script>
+    
+    <!-- 자바스크립트 Start -->
+    <th:block layout:fragment="script"></th:block>
+    <!-- 자바스크립트 End -->
+
+</body>
+
+</html>

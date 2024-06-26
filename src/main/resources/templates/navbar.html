@@ -1,0 +1,18 @@
+<div th:fragment="navbarFragment" class="top-navigation">
+    <div class="logo">
+        <a href="/">
+            <img style="width:220px;" th:src="@{/image/puzzlecom_page_logo.png}" alt="">
+        </a>
+        
+    </div>
+        <div class="navi-menu">
+            <a class="navi-item-a" th:href="@{/shop/view}">컴퓨터 견적</a>
+            <a class="navi-item-a" th:href="@{/question/list}">커뮤니티</a>
+        </div>
+        
+        <div class="SearchBox">
+            <input type="text" name="search_text" id="search_text" class="SearchText" value="">
+            <a href="" onfocus="blur();" onclick="search_word(document.search_form.search_text.value)" style="width: 40px; text-decoration-line:none; color:black">검색</a>
+        </div>
+
+</div>

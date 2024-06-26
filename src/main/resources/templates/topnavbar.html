@@ -1,0 +1,9 @@
+<div th:fragment="topnavbarFragment">
+    <div class="top-navigation-top">
+        <a class="top-navi-text" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
+        <a class="top-navi-text" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+        <a class="top-navi-text" th:href="@{/user/signup}">회원가입</a>
+        <a class="top-navi-text" href="">장바구니</a>
+        <a class="top-navi-text" href="">프로필</a>
+    </div>
+</div>

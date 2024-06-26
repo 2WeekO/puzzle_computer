@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <link rel="stylesheet" href="/src/main/java/com/example/puzzle_computer/question/resources/static/style.css">
+    <link rel="icon" type="image/png" href="/image/puzzlecom_logo.png">
+
+    <!-- ui test icon-->
+    <link rel="icon" type="image/png" href="/src/main/java/com/example/puzzle_computer/question/resources/static/image/puzzlecom_logo.png">
+
+    <title>퍼즐컴 - 커스텀 조립 컴퓨터 전문 쇼핑몰</title>
+</head>
+<body class="body">
+    <!-- Top Navigation Start -->
+    
+    <div class="top-navigation-top">
+        <a class="top-navi-text" href="login.html">로그인</a>
+        <a class="top-navi-text" href="">회원가입</a>
+        <a class="top-navi-text" href="">장바구니</a>
+        <a class="top-navi-text" href="">프로필</a>
+    </div>
+    
+    <div class="top-navigation">
+        <div class="logo">
+            <a href="/">
+                <img style="width:220px;" src="/src/main/java/com/example/puzzle_computer/question/resources/static/image/puzzlecom_page_logo.png" alt="">
+            </a>
+            
+        </div>
+            <div class="navi-menu">
+                <a class="navi-item-a" href="">컴퓨터 견적</a>
+                <a class="navi-item-a" href="">커뮤니티</a>
+            </div>
+            
+            <div class="SearchBox">
+                <input type="text" name="search_text" id="search_text" class="SearchText" value="">
+                <a href="" onfocus="blur();" onclick="search_word(document.search_form.search_text.value)" style="width: 40px; text-decoration-line:none; color:black">검색</a>
+            </div>
+            
+        
+    </div>
+    
+    <!-- Top Navigation End -->
+        <!-- 내용 Start -->
+        <div layout:fragment="content" class="content">
+            <!-- index.html Start -->
+            <div class="main_index">
+                <div class="index_first_text index_text text-bolder-index">
+                    컴퓨터를 저렴하게 구매하고 싶나요?
+                </div>
+
+                <img class="index_image" src="/src/main/java/com/example/puzzle_computer/question/resources/static/image/computer_image_1.png" alt="">
+
+                <div class="index_text text-bolder-index index_margin">
+                    그렇다면 직접 부품을 구입하고 제품을 조립해보세요!<br>훨씬 저렴한 가격으로 사용할 수 있습니다.
+                </div>
+
+                <div class="index_btn_box">
+                    <button class="index_btn">컴퓨터 견적 알아보기</button>
+                </div>
+                
+            </div>
+
+            <!-- index.html End -->
+        </div>
+        <!-- 내용 End -->
+    
+
+
+</body>
+</html>
+

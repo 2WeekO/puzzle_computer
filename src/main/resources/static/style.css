@@ -1,0 +1,587 @@
+div{
+    display: block;
+}
+
+.body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.top-navigation-top{
+    margin: 15px 10%;
+    color: white;
+    text-align: right;
+
+}
+.top-navi-text{
+    
+    padding: 6px;
+    text-decoration-line: none;
+    color: black;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.top-navigation {
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    
+}
+
+.logo{
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+}
+
+.navi-menu{
+    margin-left: 3%;
+    width: 30%;
+    display: flex;
+    text-decoration-line: none;
+    justify-content: left;
+
+    
+}
+.SearchBox {
+    display: flex;
+    margin: auto 0;
+    line-height: 48px;
+    height: 48px;
+    border: 2px solid #4b2df8;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.SearchText {
+    display: flex;
+    margin: auto 0;
+    height: 20px;
+    width: 70%;
+    font-size: 16px;
+    text-indent: 2px;
+    border: none;
+    margin-left: 20px;
+}
+
+.navi-input{
+    margin: auto 0;
+    height: 35px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+
+.navi-item-a{
+    display: flex;
+    text-decoration-line: none;
+    padding: 25px 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+    
+}
+.navi-item-a:hover{
+    display: flex;
+    text-decoration-line: none;
+    padding: 25px 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+    border-bottom: 3px solid gray;
+    
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+
+.store_index{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.store-box{
+    border-top: 2px solid rgba(136, 136, 136, 0.5);
+    border-bottom: 2px solid rgb(136, 136, 136, 0.5);
+    height: 94vh;
+    overflow: auto;
+    color: black;
+    display: block;
+    justify-content: center;
+    width: 30%;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 10px;
+}
+.store-box-product{
+    height: 94%;
+}
+
+
+.store-box-item{
+    background-color: rgba(88, 88, 88, 0.377);
+    width:96%;
+    height:100px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.store-box-name{
+    background-color:rgba(151, 151, 151, 0.603);
+    border-radius: 15px;
+}
+
+.store-box-category{
+    display: block;
+    color: black;
+    background-color: rgba(179, 179, 179, 0.089);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.store-box-category:hover{
+    color: black;
+    background-color: rgba(179, 179, 179, 0.411);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.product-show{
+    display: block;
+    
+}
+.product-box{
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    height: 150px;
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.product-box2{
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    height: 150px;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+.product-item{
+    width: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-item2{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+    display: block;
+    justify-items: center;
+    margin: auto;
+}
+
+
+.cart-btn{
+    background-color: #3b4c85;
+    border: none;
+    width: 180px;
+    height: 80px;
+    margin: auto;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+.cart-btn:hover{
+    background-color: #556dbe;
+    border: none;
+    width: 180px;
+    height: 80px;
+    margin: auto;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+.cart-btn2{
+    background-color: #3b4c85;
+    border: none;
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+.cart-btn2:hover{
+    background-color: #556dbe;
+    border: none;
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+
+.cart-total {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.search{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+.input{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    width: 30%;
+    margin: 0 20px;
+    border-width: 0 0 1px;
+    border-color: rgb(53, 53, 53);
+    color: black;
+}
+.search-btn{
+    font-size: 16px;
+    border-radius: 20px;
+    width: 5%;
+    margin: 0 10px;
+    border: 0;
+    color: black;
+}
+.search-btn:hover{
+    background-color: rgba(88, 88, 88, 0.466);
+    font-size: 16px;
+    border-radius: 20px;
+    width: 5%;
+    margin: 0 10px;
+    border: 0;
+    color: black;
+}
+
+.set-computer{
+    width: 40%;
+    height: 94vh;
+    justify-self: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 4px solid rgb(129, 129, 129);
+    padding: 10px;
+}
+.set-viewer{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px;
+    display: block;
+}
+/* -------------- Set-Viewer Style Start -------------- */
+
+.part{
+    margin: 20px auto;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px dotted rgb(199, 192, 192);
+    border-radius: 20px;
+    font-weight: bolder;
+    width: 180px;
+    height: 120px;
+    font-size: 30px;
+    color: rgb(182, 182, 182);
+    text-decoration-line: none;
+}
+
+
+/* -------------- Set-Viewer Style End -------------- */
+.set-btn-box{
+    display: flex;
+    height: 250px;
+    width: 100%;
+}
+
+.set-btn-1 {
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 30%;
+    margin: 20px 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(43, 182, 156);
+    border: none;
+}
+.set-btn-1:hover{
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 30%;
+    margin: 20px 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(26, 99, 85);
+    border: none;
+}
+.set-btn-2 {
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 30%;
+    margin: 20px 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(202, 131, 37);
+    border: none;
+}
+.set-btn-2:hover{
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 30%;
+    margin: 20px 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(143, 92, 26);
+    border: none;
+}
+
+/* -------------- footer start -------------- */
+.footer{
+    width: 100%;
+    height: 20%;
+    color: white;
+    text-align: center;
+}
+
+/* -------------- footer end -------------- */
+
+/* -------------- Login start -------------- */
+.login-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.login{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 100%;
+    margin: 40px 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    display:block;
+    text-align: center;
+}
+.login-textbox{
+    margin-top: 30px;
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    resize: none;
+    color: black;
+    border:none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+
+}
+.login-btn {
+    color: white;
+    margin: 80px 0;
+    width: 70%;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(20, 51, 70);
+}
+.login-btn:hover{
+    color: white;
+    margin: 80px 0;
+    width: 400px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(32, 83, 114);
+}
+
+/* -------------- Login end-------------- */
+
+
+
+
+/* -------------- Login end-------------- */
+
+
+
+
+
+
+
+/* -------------- Main index start -------------- */
+.index{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.index_first_text{
+    height: 600px;
+    background: linear-gradient(white,rgb(0, 0, 0));
+    text-align: center;
+    font-size: 38px;
+    margin-top: 400px;
+}
+.main_index{
+    display: block;
+}
+.index_text{
+    text-align: center;
+    font-size: 38px;
+}
+.text-bolder-index{
+    font-weight: bolder;
+}
+.index_image{
+    width: 100%;
+    background-color: #000000;
+    border-top: 30px solid rgb(0, 0, 0);
+    border-bottom: 50px solid rgb(0, 0, 0);
+}
+.index_margin{
+    margin: 200px 0;
+}
+.index_btn_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.index_btn{
+    background-color: transparent;
+    width: 300px;
+    height: 120px;
+    border: solid 3px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index_btn:hover{
+    background-color:#3f3f3f;
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* -------------- Main index end-------------- */
+
+/* -------------- PC-Recommendation start -------------- */
+
+.pc-recommendation{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.pc-rec-box{
+    background-color: #5552e9;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0 250px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+}
+.pc-rec-text{
+    
+    padding: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.pc-rec-case{
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.pc-rec-item{
+    margin: 0 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(182, 182, 182);
+    width: 300px;
+    height: 500px;
+    border: 3px solid white;
+}
+.pc-rec-name{
+    background-color: #353535;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* -------------- PC-Recommendation end-------------- */

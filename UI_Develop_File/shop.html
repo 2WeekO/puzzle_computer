@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <link rel="stylesheet" href="/src/main/java/com/example/puzzle_computer/question/resources/static/style.css">
+    <link rel="icon" type="image/png" href="/image/puzzlecom_logo.png">
+
+    <!-- ui test icon-->
+    <link rel="icon" type="image/png" href="/src/main/java/com/example/puzzle_computer/question/resources/static/image/puzzlecom_logo.png">
+
+    <title>퍼즐컴 - 커스텀 조립 컴퓨터 전문 쇼핑몰</title>
+</head>
+<body class="body">
+    <!-- Top Navigation Start -->
+    
+    <div class="top-navigation-top">
+        <a class="top-navi-text" href="login.html">로그인</a>
+        <a class="top-navi-text" href="">회원가입</a>
+        <a class="top-navi-text" href="">장바구니</a>
+        <a class="top-navi-text" href="">프로필</a>
+    </div>
+    
+    <div class="top-navigation">
+        <div class="logo">
+            <a href="/">
+                <img style="width:220px;" src="/src/main/java/com/example/puzzle_computer/question/resources/static/image/puzzlecom_page_logo.png" alt="">
+            </a>
+            
+        </div>
+            <div class="navi-menu">
+                <a class="navi-item-a" href="">컴퓨터 견적</a>
+                <a class="navi-item-a" href="">커뮤니티</a>
+            </div>
+            
+            <div class="SearchBox">
+                <input type="text" name="search_text" id="search_text" class="SearchText" value="">
+                <a href="" onfocus="blur();" onclick="search_word(document.search_form.search_text.value)" style="width: 40px; text-decoration-line:none; color:black">검색</a>
+            </div>
+            
+        
+    </div>
+    
+    <!-- Top Navigation End -->
+        <!-- 내용 Start -->
+        <div layout:fragment="content" class="content">
+            <!--쇼핑 화면 Start-->
+            <div class="store_index">
+            <div class="store-box">
+
+                <div class="store-box-product">
+                    <div class="store-box-name">제품</div>
+
+                    <div class="product-show">
+                        <div class="product-box2" th:each="item:${items}">
+                            <a class="product-item2" th:href="${item.link}"><img style="width: 100px; height:100px" th:src="${item.image}" alt="Product Image"></a>
+                            <a class="product-item2" th:href="${item.link}" th:text="${item.title}"></a>
+                            <div class = "product-item2" th:text="${item.lprice} + '원'"></div>
+                            <button class="cart-btn2">담기</button>
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+            <div class="set-computer">
+            <form action="/shop/view/item" method="get">
+            <div class="set-viewer">
+                <div style="display: flex; justify-content:center;">
+                    <a th:href="@{/shop/view/item?query=PC케이스}" class="part">케이스</a>
+                    <a th:href="@{/shop/view/item?query=파워서플라이}" class="part">파워</a>
+                    <a th:href="@{/shop/view/item?query=메인보드}" class="part">메인보드</a>
+                </div>
+                    <div style="display: flex; justify-content:center;">
+                    <a th:href="@{/shop/view/item?query=그래픽카드}" class="part">그래픽카드</a>
+                    <a th:href="@{/shop/view/item?query=CPU}" class="part">CPU</a>
+                    <a th:href="@{/shop/view/item?query=RAM}" class="part">RAM</a>
+                </div>
+                <div style="display: flex; justify-content:center;">
+                    <a th:href="@{/shop/view/item?query=HDD}" class="part">HDD</a>
+                    <a th:href="@{/shop/view/item?query=CPU쿨러}" class="part">CPU 쿨러</a>
+                    <a th:href="@{/shop/view/item?query=SSD}" class="part">SSD</a>
+                </div>
+            </div>
+            </form>
+            
+            </div>
+
+            <div class="store-box">
+            <div class="store-box-name">장바구니</div>
+            <!--
+                <div class="store-box-item"></div>
+            -->
+            <div class="set-btn-box">
+                <button class="set-btn-1">호환성 체크</button>
+                <button class="set-btn-2">주문하기</button>
+            </div>
+            </div>
+            
+        </div>
+
+        <!-- 검색 기능 추가 -->
+        <form class="search" action="/shop/view/search" method="get">
+            <input class="input" type="text" id="query" name="query" placeholder="제품 이름을 작성해주세요.">
+            <button class="search-btn" type="submit">검색</button>
+        </form>
+
+
+        <div class="product-show" id="searchResults">
+            <div class="product-box" th:each="item:${items}">
+                <a class="product-item" th:href="${item.link}"><img style="width: 150px; height:150px" th:src="${item.image}" alt="Product Image"></a>
+                <a class="product-item" th:href="${item.link}" th:text="${item.title}"></a>
+                <div class = "product-item" th:text="${item.brand}"></div>
+                <div class = "product-item" th:text="${item.lprice} + '원'"></div>
+                <button class="cart-btn">장바구니에 담기</button>
+            </div>
+        </div>
+            <!--쇼핑 화면 end-->
+            
+        </div>
+        <!-- 내용 End -->
+    
+
+
+</body>
+</html>
+
